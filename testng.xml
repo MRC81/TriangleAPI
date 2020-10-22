@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="TriangleAPI" parallel="classes" thread-count="1">
+  <test verbose="2" name="TriangleAPI tests">
+    <packages>
+            <package name="triangle_api_tests"/>
+           
+    </packages>
+        <classes>
+            <class name="triangle_api_tests.NoAuthorization_Tests"/>
+			<class name="triangle_api_tests.AddTriangle_Tests"/>
+            <class name="triangle_api_tests.DeleteTriangle_Tests"/>
+            <class name="triangle_api_tests.GetTriangle_Tests"/>
+            <class name="triangle_api_tests.GetAllTriangles_Test"/>
+            <class name="triangle_api_tests.GetArea_Tests"/>
+            <class name="triangle_api_tests.GetPerimeter_Test"/>
+
+		</classes>
+		
+		
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

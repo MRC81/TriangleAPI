@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite verbose="1" name="TriangleAPI" parallel="classes" thread-count="1">
+<suite verbose="1" name="TriangleAPI">
   <test verbose="2" name="TriangleAPI tests">
     <packages>
             <package name="triangle_api_tests"/>

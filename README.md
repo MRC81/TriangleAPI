@@ -9,7 +9,7 @@ The project was not intended to utilize a parallel execution, multiple issues ar
 
 
 ## Issues observed
-* AddTriangle_Payload - A payload without any keys is accepted i.e. '{5;6;8}' it's either intentional just not described or it's a bug.
+* AddTriangle_Payload - A payload without any keys is accepted i.e. '{5;6;8}' it's either intentional just not described, or it's a bug.
 * AddTriangle_Payload - In some cases, we have 'Code 400 - bad Request' e.g. '{"": "3;4;5"}', in other cases 'Code 422 - Unprocessable Entity' e.g. '{"separator": ";" "input": "3;4;5"}' though in all cases the payload about the same way inappropriate. Need criteria to distinguish these cases.
 * AddTriangle_Payload - Some custom separator values, e.g. '{"separator": ")", "input": "3)4)5"}' causes the Code 500 instead of Code 422.
 * AddTriangle_Payload - The separator key name content seems could be any value, e.g. '{"terminator": ";", "input": "3;4;5"}' will be accepted as a valid payload.

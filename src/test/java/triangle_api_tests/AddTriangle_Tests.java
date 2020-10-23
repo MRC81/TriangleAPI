@@ -42,11 +42,6 @@ public class AddTriangle_Tests extends SetUp {
         Strategy strategy;
 
         switch (test.getName()) {
-            case "addTriangle_validSides_Test":
-
-            case "addTriangle_negativeSides_Test":
-
-            case "addTriangle_SidesWithZero_Test":
 
             case "addTriangle_equilateralSides_Test":
                 strategy = EQUILATERAL_VALUES;
@@ -64,9 +59,14 @@ public class AddTriangle_Tests extends SetUp {
                 strategy = INVALID_VALUES;
                 break;
 
+            case "addTriangle_validSides_Test":
+
+            case "addTriangle_negativeSides_Test":
+
+            case "addTriangle_SidesWithZero_Test":
+
             default:
                 strategy = VALID_VALUES;
-                break;
         }
         for (int i = 0; i < 12; i++) {
 
@@ -675,4 +675,6 @@ public class AddTriangle_Tests extends SetUp {
                             "message", equalTo("Request method '"+method+"' not supported"));
         }
     }
+
+
 }

@@ -281,15 +281,15 @@ public class Helpers {
                 do {
                     firstSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
                     secondSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
                     thirdSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
 
                 } while (!(firstSide + secondSide < thirdSide
@@ -301,15 +301,15 @@ public class Helpers {
                 do {
                     firstSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
                     secondSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
                     thirdSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
 
                 } while (!(firstSide + secondSide == thirdSide
@@ -321,15 +321,15 @@ public class Helpers {
                 do {
                     firstSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
                     secondSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
                     thirdSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
 
                 } while (!(firstSide + secondSide > thirdSide
@@ -338,24 +338,26 @@ public class Helpers {
                 break;
 
             case EQUILATERAL_VALUES:
-                firstSide = secondSide = thirdSide = Double
+                firstSide = Double
                         .parseDouble(new DecimalFormat(pattern)
-                                .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                 .replace(",","."));
+                secondSide = firstSide;
+                thirdSide = firstSide;
                 break;
             case ISOSCELES_VALUES:
                 do {
                     firstSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
                     secondSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
                     thirdSide = Double
                             .parseDouble(new DecimalFormat(pattern)
-                                    .format(ThreadLocalRandom.current().nextDouble(0,bound))
+                                    .format(ThreadLocalRandom.current().nextDouble(0.01,bound))
                                     .replace(",","."));
 
                 } while (!(firstSide == secondSide && firstSide *2 > thirdSide
